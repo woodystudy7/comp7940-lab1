@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Security vulnerabilities scan
-        uses: aufdenpunkt/python-safety-check@v2
+        uses: aufdenpunkt/python-safety-check@main
         env:
           DEP_PATH: src/requirements.txt
       - name: Deploy
